@@ -1,0 +1,268 @@
+nn@nik:~$ mkdir "Игрушки для школьников"
+nn@nik:~$ mkdir "Игрушки для дошколят"
+nn@nik:~$ ll
+итого 144
+drwxr-x--- 20 nn       nn       4096 мая 15 20:41  ./
+drwxr-xr-x  8 root     root     4096 кра 13 01:00  ../
+drwxrwxr-x  3 nn       nn       4096 кра  2 11:26  1/
+-rw-------  1 nn       nn       5145 мая 13 00:46  .bash_history
+-rw-r--r--  1 nn       nn        220 кра  1 20:27  .bash_logout
+-rw-r--r--  1 nn       nn       3771 кра  1 20:27  .bashrc
+drwx------ 13 nn       nn       4096 кра  1 23:25  .cache/
+drwx------ 14 nn       nn       4096 кра  1 22:07  .config/
+-rw-rw-r--  1 nn       nn          1 кра  5 23:13  file1
+-rw-rw-r--  1 nn       nn          0 кра  5 23:10  file2
+lrwxrwxrwx  1 nn       nn          5 кра  5 22:49  file3 -> file1
+-rw-rw-r--  1 nn       nn          7 кра  5 23:10  file4
+drwxrwxr-x  3 nn       nn       4096 кра  5 23:23  home/
+-rw-------  1 nn       nn         32 кра 17 21:04  .lesshst
+drwx------  3 nn       nn       4096 кра  1 20:31  .local/
+drwxrwsrwx  2 testuser www-data 4096 кра 12 23:48  Naruto3/
+-rw-rw-r--  1 nn       nn       1561 чэр 16  2016  nginx_signing.key
+-rw-r--r--  1 nn       nn        807 кра  1 20:27  .profile
+-rw-rw-r--  1 nn       nn         66 кра 15 00:22  .selected_editor
+drwxr-x---  2 root     root     4096 кра  1 23:18  shared/
+drwx------  4 nn       nn       4096 кра 22 11:11  snap/
+-rw-r--r--  1 nn       nn          0 кра  1 21:15  .sudo_as_admin_successful
+lrwxrwxrwx  1 nn       nn          5 кра  3 22:54  test_ln_dir -> test3
+-rw-rw-r--  1 nn       nn         29 кра 15 00:40  test.txt
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-clipboard.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-draganddrop.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-seamless.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-vmsvga-session-tty2.pid
+-rw-------  1 nn       nn       3558 кра  5 23:17  .viminfo
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Видео/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Документы/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Загрузки/
+drwxrwxr-x  2 nn       nn       4096 мая 15 20:41 'Игрушки для дошколят'/
+drwxrwxr-x  2 nn       nn       4096 мая 15 20:41 'Игрушки для школьников'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Изображения/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Музыка/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Общедоступные/
+drwxr-xr-x  2 nn       nn       4096 кра  1 23:30 'Рабочий стол'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Шаблоны/
+nn@nik:~$
+=======================================================================
+nn@nik:~$ cd "Игрушки для школьников" && touch "Роботы" "Конструктор" "Настольные игры"
+nn@nik:~/Игрушки для школьников$ ll
+итого 8
+drwxrwxr-x  2 nn nn 4096 мая 15 20:43  ./
+drwxr-x--- 20 nn nn 4096 мая 15 20:41  ../
+-rw-rw-r--  1 nn nn    0 мая 15 20:43  Конструктор
+-rw-rw-r--  1 nn nn    0 мая 15 20:43 'Настольные игры'
+-rw-rw-r--  1 nn nn    0 мая 15 20:43  Роботы
+nn@nik:~/Игрушки для школьников$
+===============================================================================
+nn@nik:~/Игрушки для школьников$ cd ../"Игрушки для дошколят" && touch "Мягкие игрушки" "Куклы" "Машинки"
+nn@nik:~/Игрушки для дошколят$ ll
+итого 8
+drwxrwxr-x  2 nn nn 4096 мая 15 20:44  ./
+drwxr-x--- 20 nn nn 4096 мая 15 20:41  ../
+-rw-rw-r--  1 nn nn    0 мая 15 20:44  Куклы
+-rw-rw-r--  1 nn nn    0 мая 15 20:44  Машинки
+-rw-rw-r--  1 nn nn    0 мая 15 20:44 'Мягкие игрушки'
+nn@nik:~/Игрушки для дошколят$
+====================================================================================
+nn@nik:~/Игрушки для дошколят$ cd
+nn@nik:~$ mv "Игрушки для школьников" "Имя Игрушки"
+nn@nik:~$ ll
+итого 144
+drwxr-x--- 20 nn       nn       4096 мая 15 20:47  ./
+drwxr-xr-x  8 root     root     4096 кра 13 01:00  ../
+drwxrwxr-x  3 nn       nn       4096 кра  2 11:26  1/
+-rw-------  1 nn       nn       5145 мая 13 00:46  .bash_history
+-rw-r--r--  1 nn       nn        220 кра  1 20:27  .bash_logout
+-rw-r--r--  1 nn       nn       3771 кра  1 20:27  .bashrc
+drwx------ 13 nn       nn       4096 кра  1 23:25  .cache/
+drwx------ 14 nn       nn       4096 кра  1 22:07  .config/
+-rw-rw-r--  1 nn       nn          1 кра  5 23:13  file1
+-rw-rw-r--  1 nn       nn          0 кра  5 23:10  file2
+lrwxrwxrwx  1 nn       nn          5 кра  5 22:49  file3 -> file1
+-rw-rw-r--  1 nn       nn          7 кра  5 23:10  file4
+drwxrwxr-x  3 nn       nn       4096 кра  5 23:23  home/
+-rw-------  1 nn       nn         32 кра 17 21:04  .lesshst
+drwx------  3 nn       nn       4096 кра  1 20:31  .local/
+drwxrwsrwx  2 testuser www-data 4096 кра 12 23:48  Naruto3/
+-rw-rw-r--  1 nn       nn       1561 чэр 16  2016  nginx_signing.key
+-rw-r--r--  1 nn       nn        807 кра  1 20:27  .profile
+-rw-rw-r--  1 nn       nn         66 кра 15 00:22  .selected_editor
+drwxr-x---  2 root     root     4096 кра  1 23:18  shared/
+drwx------  4 nn       nn       4096 кра 22 11:11  snap/
+-rw-r--r--  1 nn       nn          0 кра  1 21:15  .sudo_as_admin_successful
+lrwxrwxrwx  1 nn       nn          5 кра  3 22:54  test_ln_dir -> test3
+-rw-rw-r--  1 nn       nn         29 кра 15 00:40  test.txt
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-clipboard.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-draganddrop.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-seamless.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-vmsvga-session-tty2.pid
+-rw-------  1 nn       nn       3558 кра  5 23:17  .viminfo
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Видео/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Документы/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Загрузки/
+drwxrwxr-x  3 nn       nn       4096 мая 15 20:46 'Игрушки для дошколят'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Изображения/
+drwxrwxr-x  2 nn       nn       4096 мая 15 20:43 'Имя Игрушки'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Музыка/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Общедоступные/
+drwxr-xr-x  2 nn       nn       4096 кра  1 23:30 'Рабочий стол'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Шаблоны/
+nn@nik:~$ mv "Игрушки для дошколят" "Имя Игрушки"
+nn@nik:~$ ll
+итого 140
+drwxr-x--- 19 nn       nn       4096 мая 15 20:48  ./
+drwxr-xr-x  8 root     root     4096 кра 13 01:00  ../
+drwxrwxr-x  3 nn       nn       4096 кра  2 11:26  1/
+-rw-------  1 nn       nn       5145 мая 13 00:46  .bash_history
+-rw-r--r--  1 nn       nn        220 кра  1 20:27  .bash_logout
+-rw-r--r--  1 nn       nn       3771 кра  1 20:27  .bashrc
+drwx------ 13 nn       nn       4096 кра  1 23:25  .cache/
+drwx------ 14 nn       nn       4096 кра  1 22:07  .config/
+-rw-rw-r--  1 nn       nn          1 кра  5 23:13  file1
+-rw-rw-r--  1 nn       nn          0 кра  5 23:10  file2
+lrwxrwxrwx  1 nn       nn          5 кра  5 22:49  file3 -> file1
+-rw-rw-r--  1 nn       nn          7 кра  5 23:10  file4
+drwxrwxr-x  3 nn       nn       4096 кра  5 23:23  home/
+-rw-------  1 nn       nn         32 кра 17 21:04  .lesshst
+drwx------  3 nn       nn       4096 кра  1 20:31  .local/
+drwxrwsrwx  2 testuser www-data 4096 кра 12 23:48  Naruto3/
+-rw-rw-r--  1 nn       nn       1561 чэр 16  2016  nginx_signing.key
+-rw-r--r--  1 nn       nn        807 кра  1 20:27  .profile
+-rw-rw-r--  1 nn       nn         66 кра 15 00:22  .selected_editor
+drwxr-x---  2 root     root     4096 кра  1 23:18  shared/
+drwx------  4 nn       nn       4096 кра 22 11:11  snap/
+-rw-r--r--  1 nn       nn          0 кра  1 21:15  .sudo_as_admin_successful
+lrwxrwxrwx  1 nn       nn          5 кра  3 22:54  test_ln_dir -> test3
+-rw-rw-r--  1 nn       nn         29 кра 15 00:40  test.txt
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-clipboard.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-draganddrop.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-seamless.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-vmsvga-session-tty2.pid
+-rw-------  1 nn       nn       3558 кра  5 23:17  .viminfo
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Видео/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Документы/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Загрузки/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Изображения/
+drwxrwxr-x  3 nn       nn       4096 мая 15 20:48 'Имя Игрушки'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Музыка/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Общедоступные/
+drwxr-xr-x  2 nn       nn       4096 кра  1 23:30 'Рабочий стол'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Шаблоны/
+nn@nik:~$ cd "Имя Игрушки"/
+nn@nik:~/Имя Игрушки$ дд
+дд: команда не найдена
+nn@nik:~/Имя Игрушки$ ll
+итого 12
+drwxrwxr-x  3 nn nn 4096 мая 15 20:48  ./
+drwxr-x--- 19 nn nn 4096 мая 15 20:48  ../
+drwxrwxr-x  3 nn nn 4096 мая 15 20:46 'Игрушки для дошколят'/
+-rw-rw-r--  1 nn nn    0 мая 15 20:43  Конструктор
+-rw-rw-r--  1 nn nn    0 мая 15 20:43 'Настольные игры'
+-rw-rw-r--  1 nn nn    0 мая 15 20:43  Роботы
+nn@nik:~/Имя Игрушки$ cd
+nn@nik:~$ ll
+итого 140
+drwxr-x--- 19 nn       nn       4096 мая 15 20:48  ./
+drwxr-xr-x  8 root     root     4096 кра 13 01:00  ../
+drwxrwxr-x  3 nn       nn       4096 кра  2 11:26  1/
+-rw-------  1 nn       nn       5145 мая 13 00:46  .bash_history
+-rw-r--r--  1 nn       nn        220 кра  1 20:27  .bash_logout
+-rw-r--r--  1 nn       nn       3771 кра  1 20:27  .bashrc
+drwx------ 13 nn       nn       4096 кра  1 23:25  .cache/
+drwx------ 14 nn       nn       4096 кра  1 22:07  .config/
+-rw-rw-r--  1 nn       nn          1 кра  5 23:13  file1
+-rw-rw-r--  1 nn       nn          0 кра  5 23:10  file2
+lrwxrwxrwx  1 nn       nn          5 кра  5 22:49  file3 -> file1
+-rw-rw-r--  1 nn       nn          7 кра  5 23:10  file4
+drwxrwxr-x  3 nn       nn       4096 кра  5 23:23  home/
+-rw-------  1 nn       nn         32 кра 17 21:04  .lesshst
+drwx------  3 nn       nn       4096 кра  1 20:31  .local/
+drwxrwsrwx  2 testuser www-data 4096 кра 12 23:48  Naruto3/
+-rw-rw-r--  1 nn       nn       1561 чэр 16  2016  nginx_signing.key
+-rw-r--r--  1 nn       nn        807 кра  1 20:27  .profile
+-rw-rw-r--  1 nn       nn         66 кра 15 00:22  .selected_editor
+drwxr-x---  2 root     root     4096 кра  1 23:18  shared/
+drwx------  4 nn       nn       4096 кра 22 11:11  snap/
+-rw-r--r--  1 nn       nn          0 кра  1 21:15  .sudo_as_admin_successful
+lrwxrwxrwx  1 nn       nn          5 кра  3 22:54  test_ln_dir -> test3
+-rw-rw-r--  1 nn       nn         29 кра 15 00:40  test.txt
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-clipboard.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-draganddrop.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-seamless.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-vmsvga-session-tty2.pid
+-rw-------  1 nn       nn       3558 кра  5 23:17  .viminfo
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Видео/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Документы/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Загрузки/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Изображения/
+drwxrwxr-x  3 nn       nn       4096 мая 15 20:48 'Имя Игрушки'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Музыка/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Общедоступные/
+drwxr-xr-x  2 nn       nn       4096 кра  1 23:30 'Рабочий стол'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Шаблоны/
+nn@nik:~$
+==============================================================================
+nn@nik:~$ mv "Имя Игрушки" "Игрушки"
+nn@nik:~$ ll
+итого 140
+drwxr-x--- 19 nn       nn       4096 мая 15 20:55  ./
+drwxr-xr-x  8 root     root     4096 кра 13 01:00  ../
+drwxrwxr-x  3 nn       nn       4096 кра  2 11:26  1/
+-rw-------  1 nn       nn       5145 мая 13 00:46  .bash_history
+-rw-r--r--  1 nn       nn        220 кра  1 20:27  .bash_logout
+-rw-r--r--  1 nn       nn       3771 кра  1 20:27  .bashrc
+drwx------ 13 nn       nn       4096 кра  1 23:25  .cache/
+drwx------ 14 nn       nn       4096 кра  1 22:07  .config/
+-rw-rw-r--  1 nn       nn          1 кра  5 23:13  file1
+-rw-rw-r--  1 nn       nn          0 кра  5 23:10  file2
+lrwxrwxrwx  1 nn       nn          5 кра  5 22:49  file3 -> file1
+-rw-rw-r--  1 nn       nn          7 кра  5 23:10  file4
+drwxrwxr-x  3 nn       nn       4096 кра  5 23:23  home/
+-rw-------  1 nn       nn         32 кра 17 21:04  .lesshst
+drwx------  3 nn       nn       4096 кра  1 20:31  .local/
+drwxrwsrwx  2 testuser www-data 4096 кра 12 23:48  Naruto3/
+-rw-rw-r--  1 nn       nn       1561 чэр 16  2016  nginx_signing.key
+-rw-r--r--  1 nn       nn        807 кра  1 20:27  .profile
+-rw-rw-r--  1 nn       nn         66 кра 15 00:22  .selected_editor
+drwxr-x---  2 root     root     4096 кра  1 23:18  shared/
+drwx------  4 nn       nn       4096 кра 22 11:11  snap/
+-rw-r--r--  1 nn       nn          0 кра  1 21:15  .sudo_as_admin_successful
+lrwxrwxrwx  1 nn       nn          5 кра  3 22:54  test_ln_dir -> test3
+-rw-rw-r--  1 nn       nn         29 кра 15 00:40  test.txt
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-clipboard.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-draganddrop.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-seamless.pid
+-rw-r-----  1 nn       nn          5 мая 15 20:39  .vboxclient-vmsvga-session-tty2.pid
+-rw-------  1 nn       nn       3558 кра  5 23:17  .viminfo
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Видео/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Документы/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Загрузки/
+drwxrwxr-x  3 nn       nn       4096 мая 15 20:48  Игрушки/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Изображения/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Музыка/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Общедоступные/
+drwxr-xr-x  2 nn       nn       4096 кра  1 23:30 'Рабочий стол'/
+drwxr-xr-x  2 nn       nn       4096 кра  1 20:31  Шаблоны/
+nn@nik:~$
+============================================================================
+nn@nik:~$ ls "Игрушки"
+'Игрушки для дошколят'   Конструктор  'Настольные игры'   Роботы
+nn@nik:~$ 
+
+====================================
+nn@nik:~$ sudo snap install notepad-plus-plus
+[sudo] пароль для nn:
+Автоматически соединить допустимые штекеры и разъёмы привязки "notepad-plus-plus"                                                                                                                                 |
+Автоматически соединить допустимые штекеры и разъёмы привязки "notepad-plus-plus"                                                                                                                                 \Автоматически соединить допустимые штекеры и разъёмы привязки "notepad-plus-plus"                                                                                                                                 /Автоматически соединить допустимые штекеры и разъёмы привязки "notepad-plus-plus"                                                                                                                                 -Автоматически соединить допустимые штекеры и разъёмы привязки "notepad-plus-plus"                                                                                                                                 /
+Автоматически соединить допустимые штекеры и разъёмы привязки "notepad-plus-plus"                                                                                                                                 |^Z
+[1]+  Остановлен    sudo snap install notepad-plus-plus
+nn@nik:~$  sudo snap remove notepad-plus-plus
+ошибка: snap "notepad-plus-plus" has "install-snap" change in progress
+nn@nik:~$ sudo snap install notepad-plus-plus
+snap-пакет "notepad-plus-plus" уже установлен, см. 'snap help refresh'
+nn@nik:~$ sudo snap remove notepad-plus-plus
+notepad-plus-plus удалён
+nn@nik:~$
+===========================================================================
+crontab -e
+   Добавляем строку: */3 * * * * /bin/echo "Hello, world!" >> /opt/mytext.txt
+
